@@ -1,0 +1,72 @@
+<html>
+
+<head>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <div class=" pgin  container py-5">
+
+        <label for=""> product Name </label>
+        <input type="text" id="name" class="form-control my-2">
+
+        <label for=""> product price </label>
+        <input type='number' id="price" class="form-control my-2">
+
+        <label for=""> product Describtion </label>
+        <textarea id="desc" class="form-control my-2"> </textarea>
+
+        <button onclick="addProduct () " type="submit" id="btnSub" class="btn  btn-outline-success my-2 ">Submit</button>
+
+
+    </div>
+
+    <div class="w-50 m-auto py-4">
+        <input   onkeyup =" searchPro(this.value) " type="text" id="search"  class="form-control" placeholder="search by product name.." >
+        <div class="w-100 pb-5 text-white" id="results" >
+
+        </div>
+    </div>
+
+    <table class=" mb-5 container py-4 table-dark text-white text-center  ">
+        <thead>
+            <th class="py-3"> Product Name </th>
+            <th class=" py-3"> Product Price </th>
+            <th class=" py-3"> Product Desc. </th>
+        </thead>
+
+        <tbody id=" tabB ">
+
+
+        </tbody>
+
+
+    </table>
+
+    <tr class='w-100 row py-5  newObject' >
+      
+      <td>  <input type="text" id="newName" class="  form-control my-2"> </td>
+      <td>  <input type="text" id="newPrice" class="  form-control my-2"> </td>
+      <td> <textarea id="newDesc" class="form-control my-2"> </textarea></td>
+      <button onclick="submit () " type="submit" id="btnSub" class="btn btn-info my-2 ">Submit</button>
+
+        
+    </tr>
+<!-- overflow-hidden   -->
+
+
+
+
+
+
+    <script src="js/jquery-3.4.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+
+</html>
